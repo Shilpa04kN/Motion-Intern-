@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .search-button {
+      position: absolute;
+      top: 10px; /* Adjust the top position as needed */
+      right: 10px; /* Adjust the right position as needed */
+    }
+    .search-box {
+      display: none;
+      position: absolute;
+      top: 50px; /* Adjust the top position as needed */
+      right: 10px; /* Adjust the right position as needed */
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-Like Fashions</title>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+</head>
+<body>
+<!-- Background Image -->
+<div class="background-image"></div>
+
+<!-- Header Section -->
+<header>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <img src="./IMAGES/OIP.jpeg" alt="U-Like Fashions Logo">
+      </div>
+      <div class="search-button" id="search-button">
+        <button onclick="toggleSearchBox()">Search</button>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- Homepage Section -->
+<section id="home" class="homepage">
+  <div class="container">
+    <h2 class="black-text">Welcome to U-Like Fashions</h2>
+    <p class="black-text">We offer the best products and services in the industry.</p>
+    <a href="#services" class="cta-button">Explore Services</a>
+  </div>
+</section>
+
+<!-- Services Page -->
+<section id="services" class="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="service-options">
+      <div class="service-option">
+        <img src="./IMAGES/perosnal.jpg" alt="Service Option 1" height="400" width="400">
+        <h3>Personalized Styling</h3>
+        <p>Get customized fashion advice and styling tips from our experts.</p>
+        <a href="#styling-details" class="cta-button">Learn More</a>
+      </div>
+      <div class="service-option">
+        <img src="./IMAGES/buy.jpeg" alt="Service Option 3" height="1000" width="800">
+        <h3>Buying Fashion Products</h3>
+        <p>Shop our wide range of high-quality fashion products at great prices.</p>
+        <a href="services.html" class="cta-button">Explore Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<!-- About Us Page -->
+<section id="about" class="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Welcome to U-Like Fashions, where we are passionate about delivering the latest trends in the world of fashion. Our journey began with a simple idea: to provide our customers with high-quality, affordable fashion that allows them to express their unique style. With a dedicated team of fashion enthusiasts, we curate a collection of clothing and accessories that cater to every taste and occasion. Join us on this fashion-forward adventure and let your style shine with U-Like Fashions.</p>
+  </div>
+</section>
+<hr>
+<!-- Contact Page -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us using the form below or via the provided contact details:</p>
+    <form action="submit_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p>You can also reach us at contact@ulikefashions.com or call us at +917885469214</p>
+    <address>
+      2nd phase, Fashion Street<br>
+      Bangalore, CA 560034<br>
+      India
+    </address>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="container">
+    <p>&copy; 2023 U-Like Fashions</p>
+  </div>
+</footer>
+</body>
+</html>
